@@ -22,7 +22,9 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 	Track track;
 
 	public void initialize() {
+		System.out.println("I'm befor setUpMidi()");
 		setUpMidi();
+		System.out.println("I'm after setUpMidi()");
 		buildTrackAndStart();
 	}
 
